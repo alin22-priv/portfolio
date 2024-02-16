@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFF1E6;
+    scroll-behavior: smooth;
+}
+
+
+*::-webkit-scrollbar { 
+    display: none; 
+}
+
+header {
+    width: 100%; /* Adjusted to 100% to span the full width of the viewport */
+    height: 150px;
+    background-color: white;
+    display: flex; /* Added to make the header itself a flex container */
+    align-items: center; /* Aligns items vertically in the center */ /* Adds some padding on the left side */
+    background: linear-gradient(#FFCCC0, #FFF1E6);
+    justify-content: flex-end;
+    
+}
+
+
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    background-color: #FF9A9A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left:30px;
+    margin-right: 7vw;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+header ul li{
+    background-color: #FF9A9A;
+}
+
+header ul li a {
+    color: #841F1F;
+    background-color: #FF9A9A;
+    transition: 0.4s;
+    
+}
+
+header ul li a:hover {
+    color: white;
+    background-color: #FF9A9A;
+    
+}
+
+.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+#chinese-name{
+    font-size: 300px;
+    font-weight: 600;
+    background: linear-gradient(#841F1F, #FD6969);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: -50px;
+}
+
+#english-name{
+    font-size: 25px;
+    color: #BE3636;
+    margin-top: -25px;
+
+}
+
+button {
+    margin-right:5px;
+    margin-left: 5px;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    color: #841F1F;
+    border-radius: 50px;
+    background-color: #FFC0C0;
+    margin-top: 60px;
+    border-color: #FFC0C0;
+    border-style: hidden;
+    box-shadow: 2px 2px 2px grey;
+    transition: box-shadow 0.2s, transform 0.2s; /* Smooth transition for visual effect */
+}
+
+button:active {
+    box-shadow: 0 0 1px grey; /* Reduced shadow to simulate pressing down */
+    transform: translateY(2px); /* Moves the button down visually */
+}
+
+
+
+
+#lifeupdates{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #841F1F;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#lifeupdates .newlifeupdates ul {
+    padding-left: 20px;
+}
+
+li::marker{
+    color: #841F1F;
+}
+
+
+.newlifeupdates ul {
+    background-color: white;
+    padding: 50px; /* Adjust the padding to center the content */
+    width: 600px;
+    height: 500px;
+    border-radius: 50px;
+    margin: 0 auto; /* Center the box horizontally */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the start (left) of the container */
+    border: 3px solid #FFC0C0;
+
+}
+
+.newlifeupdates ul li {
+    margin: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    margin-left: 50px; /* Adjust this value as needed to create space for bullet points */
+    position: relative; /* Position relative to allow absolute positioning of the bullet point */
+    color: #841F1F;
+}
+
+.newlifeupdates ul li::before {
+    color: #841F1F; /* Bullet point color */
+    font-size: 30px; /* Match the font size of the list items */
+    position: absolute; /* Absolutely position the bullet point */
+    left: -35px; /* Adjust this value to move the bullet point left of the list item */
+    top: 0; /* Align the bullet point with the top of the list item */
+}
+hr {
+    background-color: #FFC0C0; /* Replace with your desired color */
+    border: none; /* Remove the default border */
+    height: 2px; /* You can set the height to control the thickness of the hr line */
+}
+
+footer {
+    padding: 30px;
+    text-align: center; /* Centers text and inline or inline-block elements horizontally */
+    color: #841F1F
+}
+
+
+
+
+
+
+
+

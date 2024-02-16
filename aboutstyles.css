@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #E5F7FF;
+    scroll-behavior: smooth;
+}
+
+
+*::-webkit-scrollbar { 
+    display: none; 
+}
+
+header {
+    width: 100%; /* Adjusted to 100% to span the full width of the viewport */
+    height: 150px;
+    background-color: white;
+    display: flex; /* Added to make the header itself a flex container */
+    align-items: center; /* Aligns items vertically in the center */ /* Adds some padding on the left side */
+    background: linear-gradient(#94C5FF, #E5F7FF);
+    justify-content: flex-end;
+    
+}
+
+
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    background-color: #5DA8FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left:30px;
+    margin-right: 7vw;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+header ul li{
+    background-color: #5DA8FF;
+}
+
+header ul li a {
+    color: #00205F;
+    background-color: #5DA8FF;
+    transition: 0.4s;
+    
+}
+
+header ul li a:hover {
+    color: white;
+    
+}
+
+h1{
+    font-size: 150px;
+    font-weight: 600;
+    background: linear-gradient(#2C73FF, #070934);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 5px;
+    margin-bottom: -20px;
+
+}
+
+.aboutme{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph{
+    width: 60%;
+    text-align: center;
+}
+
+p{
+    margin: 1.5em;
+    font-size: 23px;
+    color: #0037A2;
+}
+
+.hobbies{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 0.5rem;
+
+}
+
+.buttons ul li{
+    list-style:none;
+    margin: 10px;
+}
+
+ul li button{
+    font-size: 18px;
+    height: 55px;
+    width: 160px;
+    border-radius: 50px;
+    color: #1C4EB0;
+    background-color: #B5D7FF;
+    border:none;
+    box-shadow: 2px 2px 2px grey;
+    transition: box-shadow 0.2s, transform 0.2s; /* Smooth transition for visual effect */
+}
+
+ul li button:active {
+    box-shadow: 0 0 1px grey; /* Reduced shadow to simulate pressing down */
+    transform: translateY(2px); /* Moves the button down visually */
+}
+
+
+hr {
+    background-color: #bbdbfe; /* Replace with your desired color */
+    border: none; /* Remove the default border */
+    height: 1px; /* You can set the height to control the thickness of the hr line */
+}
+
+footer {
+    height: 100%;
+    padding: 30px;
+    text-align: center; /* Centers text and inline or inline-block elements horizontally */
+    color: #00205F;
+}
